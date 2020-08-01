@@ -17,4 +17,6 @@ fun main() {
 
         println("Döngü2: $a")
     }
+
+
 }
