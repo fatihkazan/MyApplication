@@ -1,9 +1,9 @@
 package com.example.myapplication
 
-fun main(){
+fun main() {
 
 
-    for ( i in 3..5){
+    for (i in 3..5) {
         println(i)
     }
 
@@ -12,7 +12,7 @@ fun main(){
 
     var baslangic = 10
     var bitis = 20
-    var artis= 5
+    var artis = 5
 
     for (a in baslangic..bitis step artis)
 
@@ -20,11 +20,11 @@ fun main(){
 
     // 20 den 10'a 2 şer azalma
 
-    for(b in 20 downTo 10 step 2) {
+    for (b in 20 downTo 10 step 2) {
         println("b: $b")
     }
 
-    for(l in 1 until 5){
+    for (l in 1 until 5) {
         println("l: $l")
     }
 
@@ -34,7 +34,7 @@ fun main(){
 
     var sayac = 1
 
-    while (sayac < 4){
+    while (sayac < 4) {
         println("Sayac : $sayac")
         sayac += 1 //sayac= sayac +1 şeklinde de yazılabilirdi.
 

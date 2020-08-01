@@ -1,10 +1,10 @@
 package com.example.myapplication
 
-fun main(){
+fun main() {
 
-    var d = deneme ()
+    var d = deneme()
 
-    d.topla ()
+    d.topla()
 
 
 }

@@ -2,16 +2,16 @@ package com.example.myapplication
 
 import java.util.*
 
-fun main(){
+fun main() {
 
-val girdi = Scanner(System.`in`)
+    val girdi = Scanner(System.`in`)
 
     println("Sil (1)")
     println("Düzenle (2)")
 
     val tercih = girdi.nextInt()
 
-    when(tercih) {
+    when (tercih) {
 
 
         1 -> println("Veri silindi")

@@ -4,9 +4,9 @@ import java.util.*
 
 fun main() {
 
-println("Adınız Nedir?")
+    println("Adınız Nedir?")
 
-    val girdi = Scanner (System.`in`)
+    val girdi = Scanner(System.`in`)
 
     val ad = girdi.next()
 

@@ -2,7 +2,7 @@ package com.example.myapplication
 
 import java.util.*
 
-fun main(){
+fun main() {
 
 //NOt: Aşağıdaki kod, konsoldan girdi almaya yarayan yapı.
     val girdi = Scanner(System.`in`) // Önce bu kod oluşturulur Girdi alabilmek için.
@@ -13,7 +13,7 @@ fun main(){
     val secim = girdi.nextInt()
     println("Seçiminiz : $secim")
 
-    if (secim ==1){
+    if (secim == 1) {
         println("Kısa Kenarı giriniz")
         val kısakenar = girdi.nextInt()
 
@@ -23,16 +23,16 @@ fun main(){
 
         println("Dikdörtgen alanı")
 
-        val dikdörgenalani= kısakenar * uzunkenar
+        val dikdörgenalani = kısakenar * uzunkenar
         println("Sonuç = $dikdörgenalani")
 
     }
 
-    if (secim  == 2){
+    if (secim == 2) {
 
         println("Yarı çap giriniz")
 
-        val yaricap= girdi.nextInt()
+        val yaricap = girdi.nextInt()
 
         println("Çember Alanı")
 

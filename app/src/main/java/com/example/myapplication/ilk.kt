@@ -1,7 +1,5 @@
 package com.example.myapplication
 
-import java.sql.SQLTransactionRollbackException
-
 fun main() {
 
     //var ad = "Fatih"
@@ -25,7 +23,7 @@ fun main() {
     var a = 10
     var b = 5
 
-    println("$a ve $b 'nin çarpımı : ${a*b}")
+    println("$a ve $b 'nin çarpımı : ${a * b}")
 
     var fiyat = 15
 
@@ -39,10 +37,9 @@ fun main() {
     var s1 = 10
     var s2 = 20
 
-    var toplam = s1+25
+    var toplam = s1 + 25
 
     println(toplam)
-
 
 
 }

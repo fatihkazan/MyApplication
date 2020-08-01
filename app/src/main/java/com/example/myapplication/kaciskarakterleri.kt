@@ -1,6 +1,6 @@
 package com.example.myapplication
 
-fun main(){
+fun main() {
 
     /*var yazi ="Fatih \"napıyorsun\" dedi "
 

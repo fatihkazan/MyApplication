@@ -1,6 +1,6 @@
 package com.example.myapplication
 
-fun main(){
+fun main() {
 
     //daire alanı
 
@@ -26,11 +26,11 @@ fun main(){
     var y0 = 23.56
     var t = 3.5
 
-    var x = ((v+y0)/2)*t
+    var x = ((v + y0) / 2) * t
 
     println("x = $x")
 
-    var x2 = (y0*t)+(a*t*t)/2
+    var x2 = (y0 * t) + (a * t * t) / 2
 
     println("x2 = $x2")
 
@@ -38,19 +38,19 @@ fun main(){
 
     var y = 10
 
-    y= y+2
+    y = y + 2
 
     println(y)
 
-    y+=2
+    y += 2
 
     println(y)
 
-    y-=3
+    y -= 3
 
     println(y)
 
-    y*=4
+    y *= 4
 
     println(y)
 }

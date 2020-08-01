@@ -14,26 +14,24 @@ fun main() {
     val tercih = girdi.nextInt()
 
 
-      // if (tercih==1 || tercih==2 || tercih==3 || tercih==4)
+    // if (tercih==1 || tercih==2 || tercih==3 || tercih==4)
     println("Lütfen birinci sayıyı giriniz")
-  // else
+    // else
     //println("Lütfen geçerli bir sayı giriniz")
-    val sayi1= girdi.nextInt()
+    val sayi1 = girdi.nextInt()
 
     println("Lütfen ikinci sayıyı giriniz")
 
-    val sayi2= girdi.nextInt()
+    val sayi2 = girdi.nextInt()
 
-    when(tercih) {
+    when (tercih) {
 
         1 -> println("Toplam: ${sayi1 + sayi2}")
         2 -> println("Çıkarma: ${sayi1 - sayi2}")
         3 -> println("Çarpma: ${sayi1 * sayi2}")
         4 -> println("Bölme: ${sayi1 / sayi2}")
-        else->println("Böyle bir işlem yok")
+        else -> println("Böyle bir işlem yok")
     }
-
-
 
 
 }

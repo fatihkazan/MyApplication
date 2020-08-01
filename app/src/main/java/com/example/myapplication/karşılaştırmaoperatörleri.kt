@@ -1,6 +1,6 @@
 package com.example.myapplication
 
-fun main(){
+fun main() {
 
     var x1 = 50
     var x2 = 40
@@ -9,11 +9,11 @@ fun main(){
     var y2 = 70
 
     println(x1 == x2)
-    println(x1>x2)
-    println(x1<x2)
-    println(x1>=x2)
-    println(x1<=x2)
+    println(x1 > x2)
+    println(x1 < x2)
+    println(x1 >= x2)
+    println(x1 <= x2)
 
-    println(x1<x2 || y1<y2)
-    println(x2<x1 && y2<y1)
+    println(x1 < x2 || y1 < y2)
+    println(x2 < x1 && y2 < y1)
 }

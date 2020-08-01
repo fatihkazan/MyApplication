@@ -30,24 +30,25 @@ fun main() {
     var sifre = 1234
 
     if (kullanici == "admin" && sifre == 12345)
-    println("Hoşgeldiniz")
+        println("Hoşgeldiniz")
     else
-    println("Şifre veya parola yanlıs")
+        println("Şifre veya parola yanlıs")
 
 
-   // örnek 6 çoklu şart or
+    // örnek 6 çoklu şart or
 
     var sinif = 10
-    if (sinif == 9 || sinif== 10 || sinif== 11 || sinif == 12){
-        println("Ayt kazandınız")}
+    if (sinif == 9 || sinif == 10 || sinif == 11 || sinif == 12) {
+        println("Ayt kazandınız")
+    }
 
 
     //örnek 7 kısaltma
 
     var a = 10
-    var b= 13
+    var b = 13
 
-    if ( a == b) println("Eşit") else println ("Eşit Değil")
-    }
+    if (a == b) println("Eşit") else println("Eşit Değil")
+}
 
 

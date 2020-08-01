@@ -1,14 +1,14 @@
 package com.example.myapplication
 
-fun main(){
+fun main() {
 
-    var i : Int = 42
-    var d : Double = 42.0
-    var f : Float = 42.0f
+    var i: Int = 42
+    var d: Double = 42.0
+    var f: Float = 42.0f
 
-    var sonuc1 : Int = d.toInt()
-    var sonuc2 : Double = i.toDouble()
-    var sonuc3 : Int = f.toInt()
+    var sonuc1: Int = d.toInt()
+    var sonuc2: Double = i.toDouble()
+    var sonuc3: Int = f.toInt()
 
     println(sonuc1)
     println(sonuc2)
@@ -18,12 +18,12 @@ fun main(){
 
     var yazi1 = "34t"
 
-    try{
+    try {
 
         var x = yazi1.toInt()
 
-    }catch (e:Exception){
-        println ("Dönüşümde hata var")
+    } catch (e: Exception) {
+        println("Dönüşümde hata var")
     }
 
     //yöntem 2
@@ -32,9 +32,9 @@ fun main(){
 
     var y = yazi2.toDoubleOrNull()
 
-    if (y != null){
-        println ("y : $y")
-    }else{
+    if (y != null) {
+        println("y : $y")
+    } else {
         println("Dönüşümde hata var")
 
 
@@ -42,7 +42,7 @@ fun main(){
 
     //yöntem 3
 
-    var yazi3= "67t"
+    var yazi3 = "67t"
 
     var z = yazi3.toIntOrNull()
 

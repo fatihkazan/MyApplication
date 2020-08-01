@@ -5,9 +5,9 @@ class deneme {
     var x = 10
     var y = 20
 
-    fun topla (){
+    fun topla() {
         var x = 40
-        var z = x+y
+        var z = x + y
 
         println(z)
     }
