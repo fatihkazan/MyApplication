@@ -10,37 +10,68 @@ fun main() {
     // ortalamanız:... Notunuz: A
 
 
-    var girdi = Scanner(System.`in`)
+    val girdi = Scanner(System.`in`)
 
-    println("Vize notunuzu giriniz:")
+    print("Vize notunuzu giriniz: ")
 
-    var vize = girdi.nextDouble()
+    val vize = girdi.nextDouble()
 
-    println("Final notunuzu giriniz:")
+    print("Final notunuzu giriniz: ")
 
-    var final = girdi.nextDouble()
+    val final = girdi.nextDouble()
 
-    val ortalama = (vize / 100) * 40 + (final / 100) * 60
+    val ortalama = ((vize / 100) * 40 + (final / 100) * 60).toInt()
 
-    println("Dönem sonu notunuz: ${ortalama.toInt()}")
+    println("Dönem sonu notunuz: ${ortalama}")
 
+
+    /* if (ortalama > 100) {
+         println("Geçersiz hesaplama")
+     } else if (ortalama >= 80 && ortalama < 100) {
+         println("Dönem Sonu notunuz (A)")
+     } else if (ortalama >= 60 && ortalama < 80) {
+         println("Dönem sonu notunuz (B)")
+     } else if (ortalama >= 40 && ortalama < 60) {
+         println("Dönem sonu notunuz (C)")
+     } else if (ortalama >= 20 && ortalama < 40) {
+         println("Dönem sonu notunuz (F)")
+     } else if (ortalama >= 0 && ortalama < 20) {
+         println("Dönem sonu sonucunuz(FF)")
+     } else if (ortalama < 0) {
+         println("Geçersiz ifade")
+     }*/
+
+
+    /*if (ortalama > 100) {
+        println("Geçersiz ifade")
+    } else if (ortalama >= 80) {
+        println("Dönem sonu notu (A)")
+    } else if (ortalama >= 60) {
+        println("Dönem Sonu notunuz (C)")
+    } else if (ortalama >=40) {
+        println("Dönem sonu notunuz (D)")
+    } else if (ortalama >=20) {
+        println("Dönem sonu notunuz (F)")
+    }else if(ortalama>=0) {
+        println("Dönem sonu notunuz (FF)")
+    }else
+        println("Geçersiz ifade")*/
 
     if (ortalama > 100) {
         println("Geçersiz hesaplama")
-    } else if (ortalama >= 80 && ortalama < 100) {
+    } else if (ortalama in 80..100) {
         println("Dönem Sonu notunuz (A)")
-    } else if (ortalama >= 60 && ortalama < 80) {
+    } else if (ortalama in 60 until 80) {
         println("Dönem sonu notunuz (B)")
-    } else if (ortalama >= 40 && ortalama < 60) {
+    } else if (ortalama in 40 until 60) {
         println("Dönem sonu notunuz (C)")
-    } else if (ortalama >= 20 && ortalama < 40) {
+    } else if (ortalama in 20 until 40) {
         println("Dönem sonu notunuz (F)")
-    } else if (ortalama >= 0 && ortalama < 20) {
+    } else if (ortalama in 0 until 40) {
         println("Dönem sonu sonucunuz(FF)")
-    } else if (ortalama < 0) {
+    } else {
         println("Geçersiz ifade")
     }
-
 
 }
 
