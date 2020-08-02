@@ -22,14 +22,32 @@ fun main() {
 
     val ortalama = ((vize / 100) * 40 + (final / 100) * 60).toInt()
 
-    println("Dönem sonu notunuz: ${ortalama}")
+    println("Dönem sonu notunuz: $ortalama")
 
-    val not = if (ortalama in 80..100) "A"
-    else if (ortalama in 60 until 80) "B"
-    else if (ortalama in 40 until 60) "C"
-    else if (ortalama in 20 until 40) "D"
-    else if (ortalama in 0 until 20) "F"
-    else ""
+    /* val not = if (ortalama in 80..100) {
+         "A"
+     } else if (ortalama in 60 until 80) {
+         "B"
+     } else if (ortalama in 40 until 60) {
+         "C"
+     } else if (ortalama in 20 until 40) {
+         "D"
+     } else if (ortalama in 0 until 20) {
+         "F"
+     } else {
+         ""
+     }
+
+     */
+
+    val not = when (ortalama) {
+        in 80..100 -> "A"
+        in 60 until 80 -> "B"
+        in 40 until 60 -> "C"
+        in 20 until 40 -> "D"
+        in 0 until 20 -> "F"
+        else -> ""
+    }
 
     if (not == "") {
         println("Not geçersizdir")
