@@ -24,6 +24,19 @@ fun main() {
 
     println("Dönem sonu notunuz: ${ortalama}")
 
+    val not = if (ortalama in 80..100) "A"
+    else if (ortalama in 60 until 80) "B"
+    else if (ortalama in 40 until 60) "C"
+    else if (ortalama in 20 until 40) "D"
+    else if (ortalama in 0 until 20) "F"
+    else ""
+
+    if (not == "") {
+        println("Not geçersizdir")
+    } else {
+        println("Dönem Sonu Harfiniz: $not")
+    }
+
 
     /* if (ortalama > 100) {
          println("Geçersiz hesaplama")
@@ -57,21 +70,22 @@ fun main() {
     }else
         println("Geçersiz ifade")*/
 
-    if (ortalama > 100) {
-        println("Geçersiz hesaplama")
-    } else if (ortalama in 80..100) {
-        println("Dönem Sonu notunuz (A)")
-    } else if (ortalama in 60 until 80) {
-        println("Dönem sonu notunuz (B)")
-    } else if (ortalama in 40 until 60) {
-        println("Dönem sonu notunuz (C)")
-    } else if (ortalama in 20 until 40) {
-        println("Dönem sonu notunuz (F)")
-    } else if (ortalama in 0 until 40) {
-        println("Dönem sonu sonucunuz(FF)")
-    } else {
-        println("Geçersiz ifade")
-    }
+    /* if (ortalama > 100) {
+         println("Geçersiz hesaplama")
+     } else if (ortalama in 80..100) {
+         println("Dönem Sonu notunuz (A)")
+     } else if (ortalama in 60 until 80) {
+         println("Dönem sonu notunuz (B)")
+     } else if (ortalama in 40 until 60) {
+         println("Dönem sonu notunuz (C)")
+     } else if (ortalama in 20 until 40) {
+         println("Dönem sonu notunuz (F)")
+     } else if (ortalama in 0 until 40) {
+         println("Dönem sonu sonucunuz(FF)")
+     } else {
+         println("Geçersiz ifade")
+     }*/
+
 
 }
 
