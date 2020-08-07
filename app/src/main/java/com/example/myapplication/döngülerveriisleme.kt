@@ -14,7 +14,7 @@ fun main() {
     while (tercih > 0) {
         println("$tercih tercih")
 
-        tercih -= 1
+
     }
 
 }
